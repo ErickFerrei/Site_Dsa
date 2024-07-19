@@ -4,7 +4,6 @@ section.metricas-cell {
   align-items: center;
   padding: 45px 0 45px 0;
   overflow: hidden;
- 
 }
 
 section.metricas-cell .metricas-text {
@@ -141,5 +140,14 @@ section.metricas-cell img {
 
   section.metricas-cell img {
     width: 100%;
+  }
+}
+
+@media screen and (width < 400px) {
+  section.metricas-cell .metricas-text h3 {
+    color: #ffffff;
+    font-family: "Istok Web";
+    font-size: 20px;
+    font-weight: bold;
   }
 }
