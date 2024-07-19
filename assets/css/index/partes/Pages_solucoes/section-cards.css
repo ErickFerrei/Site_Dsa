@@ -1,0 +1,175 @@
+section.gestao {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px 0 25px 0;
+  margin: 40px 0 0 0;
+ 
+}
+
+section.gestao .container-gestao {
+  width: 80%;
+  display: flex;
+  border-radius: 30px;
+  padding: 30px 0;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(33, 66, 133, 1);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+section.gestao .container-gestao:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+section.gestao .container-gestao::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgb(41, 81, 161),
+    transparent 40%
+  );
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+section.gestao .container-gestao:hover::before {
+  opacity: 1;
+}
+
+section.gestao .container-gestao .card-heads {
+  height: 255px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+section.gestao .container-gestao .card-bodys {
+  z-index: 2;
+}
+
+section.gestao .container-gestao .card-heads h2 {
+  color: var(--cor-branco);
+  font-family: "Istok Web";
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0 0 8px 0;
+  pointer-events: none;
+}
+
+section.gestao .container-gestao .card-heads p {
+  color: var(--cor-branco);
+  font-family: "Inter";
+  font-size: 22px;
+  pointer-events: none;
+}
+
+section.gestao .container-gestao .card-heads a {
+  color: var(--cor-branco);
+  margin: 16px 0 0 0;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-family: "Istok Web";
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--cor-blue);
+}
+
+@media screen and (width < 1200px) {
+  section.gestao {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 0 25px 0;
+    margin: 40px 0 0 0;
+  }
+
+  section.gestao .container-gestao {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 30px 0;
+    align-items: center;
+    background: radial-gradient(
+      circle,
+      rgba(28, 120, 175, 1) 0%,
+      rgba(33, 66, 133, 1) 100%
+    );
+  }
+
+  section.gestao .container-gestao:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  section.gestao .container-gestao::before {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  section.gestao .container-gestao:hover::before {
+    opacity: 1;
+    display: none;
+  }
+
+  section.gestao .container-gestao .card-heads {
+    height: 255px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+  }
+
+  section.gestao .container-gestao .card-heads h2 {
+    color: var(--cor-branco);
+    font-family: "Istok Web";
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0 0 8px 0;
+  }
+
+  section.gestao .container-gestao .card-heads p {
+    color: var(--cor-branco);
+    font-family: "Inter";
+    font-size: 17px;
+  }
+
+  section.gestao .container-gestao .card-heads a {
+    color: var(--cor-branco);
+    margin: 16px 0 0 0;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-family: "Istok Web";
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--cor-blue);
+  }
+  section.gestao .container-gestao .card-bodys {
+    z-index: 2;
+  }
+
+  section.gestao .container-gestao .card-bodys img {
+    z-index: 2;
+    width: 400px;
+  }
+}

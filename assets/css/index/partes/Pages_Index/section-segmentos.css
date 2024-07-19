@@ -1,0 +1,168 @@
+section.segmentos {
+  width: 100%;
+  height: 980px;
+  max-height: 980px;
+  padding: 60px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.segmentos .segmento-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+section.segmentos .segmento-title h2 {
+  font-size: 40px;
+  font-family: "Istok Web";
+  font-weight: bold;
+}
+
+section.segmentos .segmento-title p {
+  font-size: 24px;
+  font-family: "Inter";
+  font-weight: 400;
+
+  margin: 0 0 45px 0;
+}
+
+section.segmentos .row-card {
+  width: 63%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+section.segmentos .row-card .card {
+  border: 4px solid var(--card-color, #1ba6ff);
+  width: 292px;
+  height: 333px;
+  border-radius: 21px;
+  padding: 45px 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.2s linear;
+}
+section.segmentos .row-card .card:nth-child(1) {
+  transform: translateX(-1000px);
+  opacity: 0;
+}
+section.segmentos .row-card .card:nth-child(2) {
+  transform: translateX(-1000px);
+  opacity: 0;
+}
+section.segmentos .row-card .card:nth-child(3) {
+  transform: translateX(-1000px);
+  opacity: 0;
+}
+section.segmentos .row-card .card:nth-child(4) {
+  transform: translateX(1000px);
+  opacity: 0;
+}
+section.segmentos .row-card .card:nth-child(5) {
+  transform: translateX(1000px);
+  opacity: 0;
+}
+section.segmentos .row-card .card:nth-child(6) {
+  transform: translateX(1000px);
+  opacity: 0;
+}
+section.segmentos .row-card .card:hover {
+  scale: 1.02;
+  background-color: var(--card-color, #1ba6ff);
+  color: #ffffff;
+}
+
+section.segmentos .row-card .card:hover .card-icon,
+section.segmentos .row-card .card:hover .card-name {
+  color: #ffffff;
+}
+
+section.segmentos .row-card .card .card-icon {
+  font-size: 100px;
+  color: var(--card-color, #1ba6ff);
+}
+
+section.segmentos .row-card .card .card-name {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Inter";
+  text-transform: uppercase;
+  color: var(--card-color, #1ba6ff);
+}
+
+/* Applying colors from data attribute */
+section.segmentos .row-card .card[data-color="#1BA6FF"] {
+  --card-color: #1ba6ff;
+}
+
+section.segmentos .row-card .card[data-color="#26AB71"] {
+  --card-color: #26ab71;
+}
+
+section.segmentos .row-card .card[data-color="#FF6729"] {
+  --card-color: #ff6729;
+}
+
+section.segmentos .row-card .card[data-color="#FFDD57"] {
+  --card-color: #ffdd57;
+}
+
+section.segmentos .row-card .card[data-color="#9B59B6"] {
+  --card-color: #9b59b6;
+}
+
+section.segmentos .row-card .card[data-color="#E74C3C"] {
+  --card-color: #e74c3c;
+}
+
+@media screen and (width < 1000px) {
+  section.segmentos {
+    width: 100%;
+    height: 1050px;
+    max-height: 1050px;
+    padding: 60px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.segmentos .row-card {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  section.segmentos .row-card .card {
+    border: 4px solid var(--card-color, #1ba6ff);
+    width: 170px;
+    height: 233px;
+    border-radius: 21px;
+    padding: 45px 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.2s linear;
+  }
+
+  section.segmentos .row-card .card .card-name {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    font-family: "Inter";
+    text-transform: uppercase;
+    color: var(--card-color, #1ba6ff);
+  }
+}

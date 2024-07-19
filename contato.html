@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- PRELOAD DA IMAGENS -->
+    <link
+      rel="preload"
+      href="./assets/files/images/background-topo.webp"
+      as="image"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/files/images/management.png"
+      type="image/x-icon"
+    />
+    <title>DSA SOFTWARE | CONTATO</title>
+
+    <link rel="stylesheet" href="./assets/css/index/index.css" />
+
+    <script src="./assets/js/index/mapa.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <button id="back-to-top">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+      </button>
+
+      <button id="support" class="support-btn">
+        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+      </button>
+      <div id="support-options" class="support-options">
+        <div class="header-options">
+          <img src="./assets/files/images/blank.png" alt="Logo dsa" />
+          <a href="#">X</a>
+        </div>
+        <a
+          class="support-option"
+          href="https://api.whatsapp.com/send?phone=558230258073"
+          target="_blank"
+        >
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          WHATSAPP
+        </a>
+        <a
+          class="support-option"
+          href="https://suporte.dsasoftweb.com.br/mibew/chat?locale=pt-br"
+          target="_blank"
+          ><ion-icon name="chatbubbles-outline"></ion-icon>
+          CHAT
+        </a>
+      </div>
+
+      <header>
+        <nav>
+          <div class="nav-img">
+            <img src="./assets/files/images/logo.svg" alt="DSA SOFTWARE" />
+          </div>
+          <div class="nav-item">
+            <a href="index.html" class="nav-link">DSA SOFTWARE</a>
+            <a href="sobre.html" class="nav-link">SOBRE</a>
+            <a href="solucoes.html" class="nav-link">SOLUÇÕES</a>
+            <a href="suporte.html" class="nav-link">SUPORTE</a>
+            <a href="https://meunegocio.dsasoftweb.com.br/" target="_blank"
+              >AREA DO CLIENTE</a
+            >
+          </div>
+          <div class="nav-btn">
+            <a href="contato.html">SOLICITAR PROPOSTA</a>
+          </div>
+          <button class="hamburger-btn" title="Menu Hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </header>
+
+      <section class="title">
+        <div class="text">
+          <h1>FALE CONOSCO</h1>
+        </div>
+      </section>
+
+      <section class="form-contact">
+        <h2>PREENCHA AS INFORMAÇÕES ABAIXO</h2>
+        <form action="app/sent-email.php" method="post">
+          <div class="elements-form">
+            <div class="form-group">
+              <label for="input1">NOME:</label>
+              <input type="text" id="input1" name="nome" />
+            </div>
+            <div class="form-group">
+              <label for="input2">CONTATO:</label>
+              <input type="text" id="input2" name="telefone" />
+            </div>
+          </div>
+
+          <div class="elements-form">
+            <div class="form-group">
+              <label for="input1">EMAIL:</label>
+              <input type="text" id="input1" name="email" />
+            </div>
+            <div class="form-group">
+              <label for="input2">SEGMENTO:</label>
+              <input type="text" id="input2" name="segmento" />
+            </div>
+          </div>
+
+          <div class="elements-form">
+            <div class="form-group">
+              <label for="input1">ASSUNTO:</label>
+              <textarea name="assunto" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="input2">CONTATO DSA:</label>
+              <p>
+                WhatsApp: (82)9 9999-9999 <br />
+                Fone: (82) 3025-8073.
+              </p>
+            </div>
+          </div>
+
+          <div class="contato-button">
+            <button type="submit" name="enviar">ENVIAR</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="mapa-contato">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15732.971954668503!2d-35.7505194!3d-9.6602675!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7014ffc3c5048ad%3A0xc66893e3395be0d!2sDSA%20SOFTWARE%20E%20INFORM%C3%81TICA!5e0!3m2!1spt-PT!2sbr!4v1721050276182!5m2!1spt-PT!2sbr"
+          width="80%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <footer>
+        <p>
+          Copyright &copy; 2024 DSA SOFTWARE, LTD. ALL Rights Reserved. <br />
+          desined by <a href="#">LEANDRO | DEV</a>.
+        </p>
+      </footer>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      type="module"
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="./assets/js/index/app.js"></script>
+    <script>
+      document
+        .querySelector(".container-gestao")
+        .addEventListener("mousemove", function (e) {
+          const container = e.currentTarget;
+          const rect = container.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+
+          container.style.setProperty("--mouse-x", `${x}px`);
+          container.style.setProperty("--mouse-y", `${y}px`);
+        });
+
+      document
+        .querySelector(".container-gestao")
+        .addEventListener("mouseleave", function () {
+          this.style.setProperty("--mouse-x", "50%");
+          this.style.setProperty("--mouse-y", "50%");
+        });
+    </script>
+  </body>
+</html>

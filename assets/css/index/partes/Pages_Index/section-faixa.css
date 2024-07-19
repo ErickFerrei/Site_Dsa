@@ -1,0 +1,60 @@
+section.faixa {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 60px 80px;
+}
+
+section.faixa .quadro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #101014;
+    width: calc(25% - 5px);
+}
+section.faixa .quadro.destaque{
+    background-color: #24242c;
+}
+section.faixa .quadro img{
+    width: 100%;
+    max-width: 30px;
+    margin: 0 10px 0 0;
+}
+
+section.faixa .quadro p{
+    font-family: var(--regular);
+    font-size: var(--f2);
+    color: var(--cor-branco);
+}
+
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1000px) {
+    section.faixa {
+        flex-wrap: wrap;
+        padding: 40px 30px 30px 30px;
+    }
+    
+    section.faixa .quadro{
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        width: calc(50% - 5px);
+        margin: 0 0 10px 0;
+    }
+    
+    section.faixa .quadro img{
+        max-width: 30px;  
+        margin: 0 0 10px 0;  
+    }
+    section.faixa .quadro p{
+        max-width: 120px;
+        line-height: 1.5;
+    }
+    
+    
+    
+}

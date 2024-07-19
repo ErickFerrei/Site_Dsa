@@ -1,0 +1,169 @@
+section.form-contact {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0 50px 0;
+}
+
+section.form-contact h2 {
+  color: var(--cor-preto);
+  font-family: "Istok Web";
+  font-size: 40px;
+  font-weight: bold;
+}
+
+section.form-contact form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.form-contact form .elements-form {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  width: 80%;
+}
+section.form-contact form .elements-form .form-group {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  align-items: start;
+  margin: 25px 0 0 0;
+}
+
+section.form-contact form .elements-form .form-group label {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Inter";
+  margin: 0 0 10px 0;
+}
+
+section.form-contact form .elements-form .form-group input {
+  height: 30px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+}
+section.form-contact form .elements-form .form-group p {
+  font-size: 20px;
+  font-family: "Inter";
+  gap: 10px;
+}
+
+section.form-contact form .elements-form .form-group textarea {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+}
+
+section.form-contact form .contato-button {
+  width: 50%;
+  margin: 35px 0 0 0;
+}
+
+section.form-contact form .contato-button button {
+  padding: 10px 20px;
+  background-color: #13a522;
+  color: var(--cor-branco);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+section.form-contact form .contato-button button:hover {
+  background-color: #0f831a;
+}
+
+@media screen and (width < 1000px) {
+  section.form-contact {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 50px 0;
+    margin: 0 0 35px 0;
+  }
+
+  section.form-contact h2 {
+    color: var(--cor-preto);
+    font-family: "Istok Web";
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  section.form-contact form {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.form-contact form .elements-form {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    width: 100%;
+    flex-direction: column;
+  }
+  section.form-contact form .elements-form .form-group {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    margin: 25px 0 0 0;
+  }
+
+  section.form-contact form .elements-form .form-group label {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Inter";
+    margin: 0 0 10px 0;
+  }
+
+  section.form-contact form .elements-form .form-group input {
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #f0f0f0;
+  }
+  section.form-contact form .elements-form .form-group p {
+    font-size: 15px;
+    font-family: "Inter";
+    gap: 10px;
+  }
+
+  section.form-contact form .elements-form .form-group textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #f0f0f0;
+  }
+
+  section.form-contact form .contato-button {
+    width: 100%;
+    margin: 35px 0 0 0;
+  }
+
+  section.form-contact form .contato-button button {
+    padding: 10px 20px;
+    background-color: #13a522;
+    color: var(--cor-branco);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+  section.form-contact form .contato-button button:hover {
+    background-color: #0f831a;
+  }
+}

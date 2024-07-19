@@ -1,0 +1,30 @@
+* {
+  line-height: auto;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: inherit;
+}
+
+body,
+html {
+  overscroll-behavior: none;
+  overflow-x: hidden;
+  
+  max-width: 100%;
+  width: 100%;
+}
+
+::selection {
+  color: var(--cor-branco);
+  background-color: var(--cor-azul);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+}

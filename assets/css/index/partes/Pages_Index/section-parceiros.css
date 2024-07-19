@@ -1,0 +1,140 @@
+section.revendas {
+  margin: 60px 0 0 0;
+  padding: 45px 0 45px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2e2e2efd;
+}
+
+section.revendas .text-revenda {
+  text-align: center;
+}
+section.revendas .text-revenda h3 {
+  font-size: 40px;
+  color: var(--cor-branco);
+  font-family: "Istok Web";
+  font-weight: bold;
+}
+
+section.revendas .text-revenda p {
+  font-size: 24px;
+  font-family: "Inter";
+  color: var(--cor-branco);
+  font-weight: 400;
+
+  margin: 0 0 30px 0;
+}
+
+section.revendas .logos {
+  width: 70%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 34px 0 65px 0;
+  overflow: hidden;
+  gap: 35px;
+}
+
+section.revendas .logos .logos-item {
+  display: flex;
+  justify-content: center;
+  width: calc(15% - 5px);
+}
+section.revendas .logos img {
+  width: 100%;
+  filter: saturate(0);
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+section.revendas .logos img:hover {
+  scale: 1.02;
+  filter: saturate(1);
+}
+
+section.revendas .button-parceiro a {
+  font-family: "Inter";
+  color: var(--cor-branco);
+  font-weight: 600;
+  padding: 19px 22px;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #214285, #1c78af);
+  transition: 0.3s all linear;
+}
+section.revendas .button-parceiro a:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1000px) {
+  section.revendas {
+    margin: 60px 0 0 0;
+    padding: 45px 0 45px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2e2e2efd;
+  }
+
+  section.revendas .text-revenda {
+    text-align: center;
+    max-width: 350px;
+  }
+  section.revendas .text-revenda h3 {
+    font-size: 30px;
+    color: var(--cor-branco);
+    font-family: "Istok Web";
+    font-weight: bold;
+  }
+
+  section.revendas .text-revenda p {
+    font-size: 20px;
+
+    font-family: "Inter";
+    color: var(--cor-branco);
+    font-weight: 400;
+
+    margin: 0 0 30px 0;
+  }
+
+  section.revendas .logos {
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 34px 0 65px 0;
+    overflow: hidden;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+
+  section.revendas .logos .logos-item {
+    display: flex;
+    justify-content: center;
+    width: calc(35% - 5px);
+  }
+  section.revendas .logos img {
+    width: 100%;
+    filter: saturate(0);
+    transition: all 0.2s linear;
+    cursor: pointer;
+  }
+
+  section.revendas .logos img:hover {
+    scale: 1.02;
+    filter: saturate(1);
+  }
+
+  section.revendas .button-parceiro a {
+    font-family: "Inter";
+    color: var(--cor-branco);
+    font-weight: 600;
+    padding: 19px 22px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #214285, #1c78af);
+    transition: 0.3s all linear;
+  }
+  section.revendas .button-parceiro a:hover {
+    opacity: 0.8;
+  }
+}

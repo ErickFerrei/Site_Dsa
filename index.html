@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- PRELOAD DA IMAGENS -->
+    <link
+      rel="preload"
+      href="./assets/files/images/background-topo.webp"
+      as="image"
+    />
+
+    <title>DSA SOFTWARE</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/files/images/management.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/index/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button id="back-to-top">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+      </button>
+
+      <button id="support" class="support-btn">
+        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+      </button>
+      <div id="support-options" class="support-options">
+        <div class="header-options">
+          <img src="./assets/files/images/blank.png" alt="Logo dsa" />
+          <a href="#">X</a>
+        </div>
+        <a
+          class="support-option"
+          href="https://api.whatsapp.com/send?phone=558230258073"
+          target="_blank"
+        >
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          WHATSAPP
+        </a>
+        <a
+          class="support-option"
+          href="https://suporte.dsasoftweb.com.br/mibew/chat?locale=pt-br"
+          target="_blank"
+          ><ion-icon name="chatbubbles-outline"></ion-icon>
+          CHAT
+        </a>
+      </div>
+
+      <header>
+        <nav>
+          <div class="nav-img">
+            <img src="./assets/files/images/logo.svg" alt="DSA SOFTWARE" />
+          </div>
+          <div class="nav-item">
+            <a href="index.html" class="nav-link">DSA SOFTWARE</a>
+            <a href="sobre.html" class="nav-link">SOBRE</a>
+            <a href="solucoes.html" class="nav-link">SOLUÇÕES</a>
+            <a href="suporte.html" class="nav-link">SUPORTE</a>
+            <a href="https://meunegocio.dsasoftweb.com.br/" target="_blank"
+              >AREA DO CLIENTE</a
+            >
+          </div>
+          <div class="nav-btn">
+            <a href="contato.html">SOLICITAR PROPOSTA</a>
+          </div>
+          <button class="hamburger-btn" title="Menu Hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </header>
+
+      <div class="loading-page">
+        <svg
+          id="svg-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 384 512"
+        >
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M0 96C0 60.7 28.7 32 64 32l96 0c123.7 0 224 100.3 224 224s-100.3 224-224 224l-96 0c-35.3 0-64-28.7-64-64L0 96zm160 0L64 96l0 320 96 0c88.4 0 160-71.6 160-160s-71.6-160-160-160z"
+          />
+        </svg>
+        <div class="name-container">
+          <div class="logo-name">DSA SOFTWARE</div>
+        </div>
+      </div>
+
+      <section class="apresentacao">
+        <div class="text">
+          <h1>
+            IMPULSIONANDO A TRANSFORMAÇÃO <br />
+            DIGITAL DA SUA EMPRESA <br />
+            COM <span id="typing-effect"></span>
+          </h1>
+        </div>
+      </section>
+
+      <section class="segmentos">
+        <div class="segmento-title">
+          <h2>QUAL O SEU SEGMENTO?</h2>
+          <p>Nós temos o sistema ideal!</p>
+        </div>
+
+        <div class="row-card">
+          <div class="card card1" data-color="#1BA6FF">
+            <div class="card-icon">
+              <ion-icon name="construct-outline"></ion-icon>
+            </div>
+            <div class="card-name">
+              <h3>auto peças</h3>
+            </div>
+          </div>
+
+          <div class="card card2" data-color="#26AB71">
+            <div class="card-icon">
+              <ion-icon name="cart-outline"></ion-icon>
+            </div>
+            <div class="card-name">
+              <h3>Supermercado</h3>
+            </div>
+          </div>
+
+          <div class="card card3" data-color="#FF6729">
+            <div class="card-icon">
+              <ion-icon name="storefront-outline"></ion-icon>
+            </div>
+            <div class="card-name">
+              <h3>Materias de Construções</h3>
+            </div>
+          </div>
+
+          <div class="card card4" data-color="#FFDD57">
+            <div class="card-icon">
+              <ion-icon name="glasses-outline"></ion-icon>
+            </div>
+            <div class="card-name">
+              <h3>Óticas</h3>
+            </div>
+          </div>
+
+          <div class="card card5" data-color="#9B59B6">
+            <div class="card-icon">
+              <ion-icon name="hardware-chip-outline"></ion-icon>
+            </div>
+            <div class="card-name">
+              <h3>Informática</h3>
+            </div>
+          </div>
+
+          <div class="card card6" data-color="#E74C3C">
+            <div class="card-icon">
+              <ion-icon name="business-outline"></ion-icon>
+            </div>
+            <div class="card-name">
+              <h3>Distribuidora</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="metricas-cell">
+        <div class="metricas-text">
+          <div class="blush um"></div>
+          <div class="blush dois"></div>
+          <h3>
+            Monitore todas as métricas <br />
+            da sua empresa diretamente <br />
+            em seu celular!
+          </h3>
+        </div>
+        <div class="metricas-img">
+          <img
+            src="./assets/files/images/cell.webp"
+            alt="Celular Com as metricas"
+          />
+        </div>
+      </section>
+
+      <!-- SECTION SEGMENTOS -->
+      <section class="estados-revendas">
+        <div class="containers">
+          <div class="mapa-img">
+            <img
+              src="./assets/files/images/brasil.svg"
+              alt="Imagem do mapa do BRASIL"
+            />
+          </div>
+          <div class="text-revendas">
+            <div class="title">
+              <h3>
+                Confira os estados do Brasil <br />
+                onde estamos presentes.
+              </h3>
+              <p id="estado">ALAGOAS (AL)</p>
+            </div>
+            <div class="nomes-revendas">
+              <h3>Representantes desse estado:</h3>
+              <div class="name-number">
+                <div class="name">
+                  <p>NOME:</p>
+                  <ul>
+                    <li id="nome">
+                      Cicero Deive <br />
+                      Leadro de Oliveira <br />
+                      Claudemisson <br />
+                      Daniel Ferreira <br />
+                    </li>
+                  </ul>
+                </div>
+                <div class="name">
+                  <p>NÚMERO:</p>
+                  <ul>
+                    <li id="numero">
+                      (82) 9 9619-0973 <br />
+                      (82) 9 8748-1563 <br />
+                      (82) 9 8150-6199 <br />
+                      (82) 9 8866-4655 <br />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="revendas">
+        <div class="text-revenda">
+          <h3>Juntos, Impulsionando o Sucesso!</h3>
+          <p>
+            Alguns de nossos parceiros que estão colaborando com a DSA SOFTWARE.
+          </p>
+        </div>
+        <div class="logos">
+          <div class="logos-item">
+            <img src="./assets/files/images/imendes.svg" alt="LOGO REVENDA" />
+          </div>
+          <div class="logos-item">
+            <img src="./assets/files/images/rvhub.svg" alt="LOGO REVENDA" />
+          </div>
+          <div class="logos-item">
+            <img
+              src="./assets/files/images/dominioSistem.svg"
+              alt="LOGO REVENDA"
+            />
+          </div>
+          <div class="logos-item">
+            <img src="./assets/files/images/pixpdv.svg" alt="LOGO REVENDA" />
+          </div>
+        </div>
+
+        <div class="button-parceiro">
+          <a
+            href="https://api.whatsapp.com/send?phone=5582996190973&text=Ol%C3%A1%20vim%20atraves%20do%20site%20e%20quero%20ser%20um%20PARCEIRO%20DSA."
+            target="_blank"
+            >Seja um Parceiro</a
+          >
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          Copyright &copy; 2024 DSA SOFTWARE, LTD. ALL Rights Reserved. <br />
+          desined by <a href="#">LEANDRO | DEV</a>.
+        </p>
+      </footer>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      type="module"
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8b48067649.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/js/index/app.js"></script>
+    <script src="./assets/js/index/mapa.js"></script>
+  </body>
+</html>

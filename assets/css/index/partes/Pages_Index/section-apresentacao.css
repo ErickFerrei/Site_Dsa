@@ -1,0 +1,74 @@
+section.apresentacao {
+  height: 800px;
+  width: 100%;
+  background: url("../../../../files/images/background-topo.webp") no-repeat
+    center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.apresentacao .text {
+  width: 80%;
+}
+
+section.apresentacao h1 {
+  color: var(--cor-branco);
+  font-family: "Inter";
+  font-size: 2.5rem;
+  font-weight: 700;
+  max-width: 800px;
+}
+
+section.apresentacao span {
+  color: #2a97d8;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+#typing-effect {
+  border-right: 2px solid #2a97d8; /* Cursor */
+
+  overflow: hidden;
+  animation: blink 0.75s step-end infinite;
+}
+
+@media screen and (max-width: 1000px) {
+  section.apresentacao {
+    height: 700px;
+    width: 100%;
+    background: url("../../../../files/images/background-topo.webp") no-repeat
+      center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.apresentacao .text {
+    display: flex;
+    text-align: center;
+    width: 80%;
+  }
+
+  section.apresentacao h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}

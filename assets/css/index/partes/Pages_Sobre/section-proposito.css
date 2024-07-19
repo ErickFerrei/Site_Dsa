@@ -1,0 +1,120 @@
+section.proposito {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.proposito h2 {
+  color: var(--cor-preto);
+  font-family: "Istok Web";
+  font-size: 40px;
+  font-weight: bold;
+  padding: 15px 0 0 0;
+}
+
+section.proposito .container-card {
+  width: 70%;
+  margin: 25px 0 0 0;
+  padding: 20px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: auto auto;
+}
+
+section.proposito .container-card .card {
+  display: flex;
+  align-items: center;
+  padding: 20px 50px 20px 50px;
+  height: 140px;
+  border-radius: 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(28, 120, 175, 1) 0%,
+    rgba(9, 27, 62, 1) 51%
+  );
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+section.proposito .container-card .card:hover {
+  scale: 1.02;
+}
+
+section.proposito .container-card .card .card-head {
+  font-size: 4rem;
+  color: var(--cor-branco);
+  margin: 0 50px 0 0;
+}
+
+section.proposito .container-card .card .card-body h3 {
+  font-size: 1.6rem;
+  color: var(--cor-branco);
+  font-family: "Istok Web";
+  font-weight: 600;
+}
+
+section.proposito .container-card .card .card-body p {
+  font-size: 1.2rem;
+  color: var(--cor-branco);
+  font-family: "Istok Web";
+}
+
+@media screen and (max-width: 1000px) {
+  section.proposito {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.proposito h2 {
+    color: var(--cor-preto);
+    font-family: "Istok Web";
+    font-size: 32px;
+    font-weight: bold;
+    padding: 15px 0 0 0;
+  }
+
+  section.proposito .container-card {
+    width: 100%;
+    margin: 25px 0 0 0;
+    padding: 20px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: auto;
+  }
+
+  section.proposito .container-card .card {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px 20px 50px;
+    height: 140px;
+    border-radius: 30px;
+    background: linear-gradient(
+      90deg,
+      rgba(28, 120, 175, 1) 0%,
+      rgba(9, 27, 62, 1) 51%
+    );
+  }
+
+  section.proposito .container-card .card .card-head {
+    font-size: 3em;
+    color: var(--cor-branco);
+    margin: 0 50px 0 0;
+  }
+
+  section.proposito .container-card .card .card-body h3 {
+    font-size: 1.3rem;
+    color: var(--cor-branco);
+    font-family: "Istok Web";
+    font-weight: 600;
+  }
+
+  section.proposito .container-card .card .card-body p {
+    font-size: 1rem;
+    color: var(--cor-branco);
+    font-family: "Istok Web";
+  }
+}

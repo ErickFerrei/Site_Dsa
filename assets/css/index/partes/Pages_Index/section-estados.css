@@ -1,0 +1,207 @@
+#svg-map {
+  cursor: pointer;
+}
+
+#svg-map .circle,
+#svg-map path {
+  fill: #789ac7;
+}
+
+#svg-map a:hover .circle,
+#svg-map a:hover path {
+  fill: #31517a !important;
+}
+
+section.estados-revendas {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 630px;
+  max-height: 630px;
+  overflow: hidden;
+}
+
+section.estados-revendas .containers {
+  display: flex;
+  width: 80%;
+
+  align-items: center;
+  justify-content: space-around;
+}
+
+section.estados-revendas .containers .mapa-img img {
+  width: 500px;
+}
+section.estados-revendas .containers .text-revendas {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  height: 80%;
+}
+
+section.estados-revendas .containers .text-revendas .title h3 {
+  color: #000000;
+  font-family: "Istok Web";
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+section.estados-revendas .containers .text-revendas .title p {
+  color: #000000;
+  font-family: "Istok Web";
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+section.estados-revendas .containers .text-revendas .nomes-revendas h3 {
+  color: #000000;
+  font-family: "Istok Web";
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  text-align: start;
+}
+
+section.estados-revendas
+  .containers
+  .text-revendas
+  .nomes-revendas
+  .name-number {
+  color: #000000;
+  font-family: "Inter";
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+  text-align: start;
+}
+
+section.estados-revendas
+  .containers
+  .text-revendas
+  .nomes-revendas
+  .name-number
+  .name
+  p {
+  margin: 0 0 20px 0;
+  font-weight: bold;
+}
+
+section.estados-revendas
+  .containers
+  .text-revendas
+  .nomes-revendas
+  .name-number
+  .name
+  ul
+  li {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  section.estados-revendas {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 900px;
+    max-height: 900px;
+    overflow: hidden;
+    padding: 25px 0 0 0;
+  }
+
+  section.estados-revendas .containers {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #svg-map {
+    cursor: pointer;
+    width: 100%;
+  }
+  section.estados-revendas .containers .text-revendas {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    height: 80%;
+  }
+
+  section.estados-revendas .containers .text-revendas .title h3 {
+    color: #000000;
+    font-family: "Istok Web";
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 15px 0;
+  }
+
+  section.estados-revendas .containers .text-revendas .title p {
+    color: #000000;
+    font-family: "Istok Web";
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+  section.estados-revendas .containers .text-revendas .nomes-revendas h3 {
+    color: #000000;
+    font-family: "Istok Web";
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    text-align: start;
+  }
+
+  section.estados-revendas
+    .containers
+    .text-revendas
+    .nomes-revendas
+    .name-number {
+    color: #000000;
+    font-family: "Inter";
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    text-align: start;
+  }
+
+  section.estados-revendas
+    .containers
+    .text-revendas
+    .nomes-revendas
+    .name-number
+    .name
+    p {
+    margin: 0 0 20px 0;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  section.estados-revendas
+    .containers
+    .text-revendas
+    .nomes-revendas
+    .name-number
+    .name
+    ul
+    li {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1rem;
+  }
+}

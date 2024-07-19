@@ -1,0 +1,53 @@
+[
+    
+    {
+        "code": "2",
+        "estado": "Alagoas",
+        "sigla": "AL",
+        "nome": ["Cicero Deive","Leadro de Oliveira","Claudemisson","Daniel Ferreira"],
+        "numero": ["(82) 9 9619-0973","(82) 9 8748-1563","(82) 9 8150-6199","(82) 9 8866-4655"]       
+    },
+    {
+      "code": "17",
+      "estado": "Pernambuco",
+      "sigla": "PE",
+      "nome": ["Aluisio","Marcos Suel","Andre"],
+      "numero": ["(81) 9 8107-9737","(81) 9 8933-2144","(81) 9 8429-9051"]       
+    },
+    {
+      "code": "6",
+      "estado": "Ceará",
+      "sigla": "CE",
+      "nome": ["Paulo Ferreira","Dsa Software"],
+      "numero": ["(88) 9 8813-1755","(82) 3025-8073"]       
+    },
+    {
+      "code": "5",
+      "estado": "Bahia",
+      "sigla": "BA",
+      "nome": ["Dsa Software"],
+      "numero": ["(82) 3025-8073"]       
+    },
+    {
+      "code": "13",
+      "estado": "Minas Gerais",
+      "sigla": "MG",
+      "nome": ["Dsa Software"],
+      "numero": ["(82) 3025-8073"]      
+    },
+    {
+      "code": "4",
+      "estado": "Amazonas",
+      "sigla": "AM",
+      "nome": ["Dsa Software"],
+      "numero": ["(82) 3025-8073"]       
+    },
+    {
+      "code": "27",
+      "estado": "Tocantins",
+      "sigla": "TO",
+      "nome": ["Dsa Software"],
+      "numero": ["(82) 3025-8073"]       
+    }
+    
+]

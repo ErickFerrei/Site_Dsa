@@ -1,0 +1,99 @@
+section.about {
+  width: 100%;
+  height: 450px;
+  max-height: 450px;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 35px 0;
+}
+
+section.about .container-about {
+  display: flex;
+  gap: 15px;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.about .container-about .text-about {
+  height: 350px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+section.about .container-about .text-about h2 {
+  color: var(--cor-preto);
+  font-family: "Istok Web";
+  font-size: 40px;
+  font-weight: bold;
+  padding: 15px 0 0 0;
+}
+
+section.about .container-about .text-about p {
+  color: var(--cor-preto);
+  align-items: start;
+  font-family: "Istok Web";
+  font-size: 24px;
+  padding: 15px 0 0 0;
+}
+
+section.about .container-about .video {
+  height: 350px;
+  background-color: #acacac;
+  background-size: cover;
+  border-radius: 30px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  section.about {
+    height: 800px;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  section.about .container-about {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section.about .container-about .text-about {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.about .container-about .text-about h2 {
+    color: var(--cor-preto);
+    font-family: "Istok Web";
+    font-size: 32px;
+    font-weight: bold;
+    padding: 15px 0 0 0;
+  }
+
+  section.about .container-about .text-about p {
+    color: var(--cor-preto);
+    align-items: start;
+    font-family: "Istok Web";
+    font-size: 20px;
+    padding: 15px 0 0 0;
+  }
+
+  section.about .container-about .video {
+    height: 300px;
+    background-color: #acacac;
+    border-radius: 30px;
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+  }
+}
