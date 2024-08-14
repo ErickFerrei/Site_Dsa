@@ -5,9 +5,7 @@ section.gestao {
   justify-content: space-around;
   padding: 25px 0 25px 0;
   margin: 40px 0 0 0;
- 
 }
-
 section.gestao .container-gestao {
   width: 80%;
   display: flex;
@@ -21,7 +19,24 @@ section.gestao .container-gestao {
   transition: all 0.3s ease;
 }
 
+section.gestao .container-gestao.pdv {
+  width: 80%;
+  display: flex;
+  border-radius: 30px;
+  padding: 30px 0;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #c98525;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
 section.gestao .container-gestao:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+section.gestao .container-gestao.pdv:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -41,6 +56,28 @@ section.gestao .container-gestao::before {
   opacity: 0;
   pointer-events: none;
   z-index: 1;
+}
+
+section.gestao .container-gestao.pdv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgb(255, 183, 48),
+    transparent 40%
+  );
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+section.gestao .container-gestao.pdv:hover::before {
+  opacity: 1;
 }
 
 section.gestao .container-gestao:hover::before {
@@ -84,6 +121,17 @@ section.gestao .container-gestao .card-heads a {
   background-color: var(--cor-blue);
 }
 
+section.gestao .container-gestao .card-heads.pdv a {
+  color: var(--cor-branco);
+  margin: 16px 0 0 0;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-family: "Istok Web";
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f3b956;
+}
+
 @media screen and (width < 1200px) {
   section.gestao {
     width: 100%;
@@ -94,7 +142,6 @@ section.gestao .container-gestao .card-heads a {
     padding: 25px 0 25px 0;
     margin: 40px 0 0 0;
   }
-
   section.gestao .container-gestao {
     width: 95%;
     display: flex;
@@ -102,11 +149,14 @@ section.gestao .container-gestao .card-heads a {
     border-radius: 30px;
     padding: 30px 0;
     align-items: center;
-    background: radial-gradient(
-      circle,
-      rgba(28, 120, 175, 1) 0%,
-      rgba(33, 66, 133, 1) 100%
-    );
+  }
+  section.gestao .container-gestao.pdv {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 30px 0;
+    align-items: center;
   }
 
   section.gestao .container-gestao:hover {

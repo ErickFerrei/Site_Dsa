@@ -6,13 +6,12 @@ use PHPMailer\PHPMailer\Exception;
 
 require '../vendor/autoload.php';
 
-
-if (isset($_POST['enviar'])) {
+if (isset($_POST['nome'])) {
 
   $mail = new PHPMailer(true);
 
   try {
-    //Conexão com o server 
+    //Conexão com o servidor
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;
     $mail->isSMTP();
     $mail->Host       = 'mail.dsasoftweb.com.br';
@@ -21,7 +20,6 @@ if (isset($_POST['enviar'])) {
     $mail->Password   = '9625asdf157';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
-
 
     $mail->setFrom('contato@dsasoftweb.com.br', 'Mailer');
     $mail->addAddress('contato@dsasoftweb.com.br', 'Joe User');
@@ -37,13 +35,14 @@ if (isset($_POST['enviar'])) {
     $body = str_replace('{assunto}', $_POST['assunto'], $body);
 
     $mail->isHTML(true);
-    $mail->Subject = 'Contato vindo do Site';
+    $mail->Subject = 'RES: [CONTATO FEITO PELO SITE]';
     $mail->Body    = $body;
     $mail->send();
 
-
-    echo '<script>window.alert("👍 Mensagem enviada com sucesso!!"), window.location = "../index.html" </script>';
+    echo json_encode(['status' => 'success']);
   } catch (Exception $e) {
-    echo "Menssagem não enviada com sucesso. Mailer Error: {$mail->ErrorInfo}";
+    echo json_encode(['status' => 'error', 'message' => $mail->ErrorInfo]);
   }
+} else {
+  echo json_encode(['status' => 'error', 'message' => 'Dados incompletos.']);
 }
