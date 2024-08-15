@@ -48,6 +48,12 @@
       "sigla": "TO",
       "nome": ["Dsa Software"],
       "numero": ["(82) 3025-8073"]       
+    },
+    {
+      "code": "26",
+      "estado": "Sergipe",
+      "sigla": "SE",
+      "nome": ["Dsa Software"],
+      "numero": ["(82) 3025-8073"]       
     }
-    
 ]

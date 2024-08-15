@@ -21,7 +21,7 @@ if (isset($_POST['nome'])) {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
 
-    $mail->setFrom('contato@dsasoftweb.com.br', 'Mailer');
+    $mail->setFrom('contato@dsasoftweb.com.br', 'DSA SOFTWARE');
     $mail->addAddress('contato@dsasoftweb.com.br', 'Joe User');
 
     // Carregar template HTML

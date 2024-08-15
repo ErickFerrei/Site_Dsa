@@ -43,13 +43,25 @@ section.form-contact form .elements-form .form-group label {
 }
 
 section.form-contact form .elements-form .form-group input {
-  height: 30px;
+  height: 38px;
   width: 100%;
   border-radius: 10px;
+  text-transform: uppercase;
   padding: 10px;
   font-size: 1rem;
   background-color: #f0f0f0;
 }
+
+section.form-contact form .elements-form .form-group select {
+  height: 38px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
 section.form-contact form .elements-form .form-group p {
   font-size: 20px;
   font-family: "Inter";
@@ -59,6 +71,7 @@ section.form-contact form .elements-form .form-group p {
 section.form-contact form .elements-form .form-group textarea {
   width: 100%;
   border-radius: 10px;
+  text-transform: uppercase;
   padding: 10px;
   font-size: 1rem;
   background-color: #f0f0f0;
@@ -67,6 +80,39 @@ section.form-contact form .elements-form .form-group textarea {
 section.form-contact form .contato-button {
   width: 50%;
   margin: 35px 0 0 0;
+}
+
+/* Estilo do botão durante o loading */
+section.form-contact form .contato-button button.loading {
+  cursor: not-allowed;
+  background-color: #ccc;
+  color: transparent;
+  position: relative;
+}
+
+/* Animação de loading (spinner) */
+section.form-contact form .contato-button button.loading::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-top-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 1s linear infinite;
+}
+
+/* Keyframes para a animação de rotação */
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 section.form-contact form .contato-button button {
